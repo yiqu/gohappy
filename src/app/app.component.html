@@ -1,15 +1,5 @@
-<mat-toolbar class="example-header">Header</mat-toolbar>
+<app-navbar-top></app-navbar-top>
 
-<mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
-      [fixedInViewport]="false">
-    Sidenav
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    Content
-    <div style="padding-top: 1000px">
-      fd
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<div class="container example-container">
+  <router-outlet></router-outlet>
+</div>
