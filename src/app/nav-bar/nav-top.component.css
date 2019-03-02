@@ -4,5 +4,19 @@
   left: 0;
   right: 0;
   z-index: 3;
-  background-color: #fff;
+  background-color: #F3F8FB;
+  height: 44px;
+}
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+.title-text {
+  font-size: 25px;
+  color: #02096F;
+}
+
+.logo-img {
+  margin-right: 10px;
 }

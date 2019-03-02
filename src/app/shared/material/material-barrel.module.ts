@@ -55,6 +55,7 @@ import {
     MatListModule,
     MatDividerModule,
     MatIconModule,
+    MatDialogModule,
   ]
 })
 export class MaterialModules {}
