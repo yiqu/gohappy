@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
+import { CommonModule } from '@angular/common';
 import { MaterialModules } from './../shared/material/material-barrel.module';
 import { HomeLeftNavComponent } from './navigation/nav.component';
 import { HomeFeedComponent } from './event-feed/feed.component';
 import { HomeUpcomingComponent } from './upcoming/upcoming.component';
 import { FeedEventModule } from '../shared/event/event.module';
+import { DataService } from '../shared/service/data.service';
+import { LoadingModule } from './../loading/loading.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,8 @@ import { FeedEventModule } from '../shared/event/event.module';
   ],
 
   imports: [
+    CommonModule,
+    LoadingModule,
     MaterialModules,
     FeedEventModule
   ],
@@ -23,6 +28,8 @@ import { FeedEventModule } from '../shared/event/event.module';
 
   ],
   
-  providers: [],
+  providers: [
+    DataService
+  ],
 })
 export class HomeModule { }

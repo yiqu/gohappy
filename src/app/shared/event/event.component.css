@@ -1,0 +1,18 @@
+.main-card {
+  max-width: 540px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.co-name {
+  font-size: 15px;
+  color: #162643;
+  font-weight: 700;
+}
+
+.event-type {
+  font-size: 13px;
+}

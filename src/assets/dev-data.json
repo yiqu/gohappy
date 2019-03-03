@@ -7,6 +7,7 @@
         "abbrev": "GDIT",
         "id": "gdit"
       },
+      "companyImageUrl": "",
       "startTime": 1010101011111,
       "eventDuration": 3,
       "eventType": {
@@ -29,10 +30,7 @@
       "eventStats": {
         "going": 3,
         "interested": 8
-      },
-      "description": "Join us for a Tech Talk happy hour!",
-      "rsvpLink": ""
-
+      }
     },
     {
       "companyName": {
@@ -40,6 +38,7 @@
         "abbrev": "GDMS",
         "id": "gdms"
       },
+      "companyImageUrl": "",
       "startTime": 1010101011111,
       "eventDuration": 3,
       "eventType": {
@@ -71,6 +70,7 @@
         "abbrev": "PRAX",
         "id": "praxis"
       },
+      "companyImageUrl": "",
       "startTime": 1010101011111,
       "eventDuration": 3,
       "eventType": {
@@ -93,9 +93,7 @@
       "eventStats": {
         "going": 3,
         "interested": 11
-      },
-      "description": "Join us for a Tech Talk happy hour!",
-      "rsvpLink": ""
+      }
     }
   ]
 }

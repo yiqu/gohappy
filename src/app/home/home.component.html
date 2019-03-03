@@ -1,9 +1,9 @@
-<div class="row">
+<div class="row" *ngIf="feedData; else loading">
   <div class="col-sm-3">
     <app-home-timeline-nav></app-home-timeline-nav>
   </div>
   <div class="col-sm-6">
-    <app-home-feed></app-home-feed>
+    <app-home-feed [data]="feedData"></app-home-feed>
   </div>
   <div class="col-sm-3">
     <div class="sticky-top">
@@ -11,3 +11,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #loading>
+  <app-loading></app-loading>
+</ng-template>

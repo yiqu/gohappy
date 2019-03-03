@@ -4,8 +4,8 @@
   left: 0;
   right: 0;
   z-index: 3;
-  background-color: #F3F8FB;
-  height: 44px;
+  background-color: #1976d2;
+  height: 54px;
 }
 
 .nav-spacer {
@@ -14,9 +14,11 @@
 
 .title-text {
   font-size: 25px;
-  color: #02096F;
+  color: #fff;
 }
 
 .logo-img {
   margin-right: 10px;
+  height: 40px;
+  width: 40px;
 }

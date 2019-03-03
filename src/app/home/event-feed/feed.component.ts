@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, OnChanges, SimpleChanges } from '@angular/core';
+import { IResponse, IFeedItem } from './../../shared/models/IResponse.model';
 
 @Component({
   selector: 'app-home-feed',
@@ -6,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feed.component.css']
 })
 
-export class HomeFeedComponent implements OnInit {
-  constructor() { }
+export class HomeFeedComponent implements OnInit, OnChanges {
 
-  ngOnInit() { }
+  @Input()
+  data: IResponse;
+
+  feedItems: IFeedItem[] = [];
+
+  constructor() {
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    this.feedItems = changes.data.currentValue.items.slice();
+  }
+
+  ngOnInit() {
+  }
 }

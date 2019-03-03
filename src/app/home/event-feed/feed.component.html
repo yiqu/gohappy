@@ -1,5 +1,5 @@
 <div>
-  <app-feed-event></app-feed-event>
+  <app-feed-event *ngFor="let event of feedItems" [data]="event"></app-feed-event>
   
   <div style="padding-top: 1000px">
     fd

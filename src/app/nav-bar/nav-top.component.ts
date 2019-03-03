@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NavbarTopComponent implements OnInit {
+
+  title: string = "go happyhour";
+  
   constructor() { }
 
   ngOnInit() { }

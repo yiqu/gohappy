@@ -1,7 +1,6 @@
 .home-container {
   position: absolute;
-  /* top = toolbar height + 1*/
-  top: 45px;
+  top: 55px; /* top = toolbar height + 1*/
   bottom: 1px;
   left: 0;
   right: 0;
