@@ -9,8 +9,14 @@ export interface IFeedItem {
   startTime: number;
   eventDuration: number;
   eventType: IEventType;
+  eventLocation: IEventLocation;
   eventStatus: IEventStatus;
   eventStats: IEventStats;
+}
+
+export interface IEventLocation {
+  address: string;
+  name: string;
 }
 
 export interface ICompanyName {

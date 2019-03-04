@@ -15,6 +15,10 @@
         "abbrev": "HH",
         "id": "hh"
       },
+      "eventLocation": {
+        "address": "",
+        "name": "Black Flag"
+      },
       "eventStatus": {
         "description": "Join us for a Tech Talk happy hour!",
         "rsvpLink": "link.here",
@@ -46,6 +50,10 @@
         "abbrev": "HH",
         "id": "hh"
       },
+      "eventLocation": {
+        "address": "",
+        "name": "Jail Break"
+      },
       "eventStatus": {
         "description": "Join us for a Tech Talk happy hour!",
         "rsvpLink": "link.here",
@@ -71,12 +79,16 @@
         "id": "praxis"
       },
       "companyImageUrl": "",
-      "startTime": 1010101011111,
+      "startTime": 1551657158778,
       "eventDuration": 3,
       "eventType": {
-        "display": "Happy Hour",
-        "abbrev": "HH",
-        "id": "hh"
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
       },
       "eventStatus": {
         "description": "Join us for a Tech Talk happy hour!",

@@ -3,7 +3,7 @@
 }
 
 .example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-image: url('/assets/images/happy_hour_2.jpg');
   background-size: cover;
 }
 
@@ -15,4 +15,31 @@
 
 .event-type {
   font-size: 13px;
+}
+
+.event-subtitles {
+  display: flex;
+}
+
+.event-subtitle {
+  display: flex;
+  margin-right: 10px;
+}
+
+.footer-button {
+  min-width: 100px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  border: 1px solid #ccd0d5;
+}
+
+.button-icon {
+  margin-top: 4px;
+  margin-right: -8px;
+}
+
+.button-icon-going {
+  margin-top: 4px;
+  margin-right: -4px;
 }

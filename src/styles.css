@@ -16,11 +16,20 @@
   font-family: 'Fredoka One', cursive;
 }
 
+/* 
+* Utilities
+*/
+.mr-3px {
+  margin-right: 3px;
+}
+
 
 /* Overrides */
 .mat-card-header .mat-card-title {
   margin-bottom: 7px !important;
 }
+
+
 
 /* material icons */
 /* Rules for sizing the icon. */
@@ -40,3 +49,7 @@
 /* Rules for using icons as white on a dark background. */
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.light-blue {
+  color: #3870A9;
+}
