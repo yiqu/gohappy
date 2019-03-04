@@ -1,0 +1,111 @@
+{
+  "total_count": 1,
+  "items": [
+    {
+      "companyName": {
+        "display": "General Dynamics Information Technology",
+        "abbrev": "GDIT",
+        "id": "gdit"
+      },
+      "companyImageUrl": "",
+      "startTime": 1010101011111,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Happy Hour",
+        "abbrev": "HH",
+        "id": "hh"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "Black Flag"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 8
+      }
+    },
+    {
+      "companyName": {
+        "display": "General Dynamics Mission Systems",
+        "abbrev": "GDMS",
+        "id": "gdms"
+      },
+      "companyImageUrl": "",
+      "startTime": 1010101011111,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Happy Hour",
+        "abbrev": "HH",
+        "id": "hh"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "Jail Break"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 8
+      }
+      
+    },
+    {
+      "companyName": {
+        "display": "Praxis Engineering",
+        "abbrev": "PRAX",
+        "id": "praxis"
+      },
+      "companyImageUrl": "",
+      "startTime": 1551657158778,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 11
+      }
+    }
+  ]
+}
