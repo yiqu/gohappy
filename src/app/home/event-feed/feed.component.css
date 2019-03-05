@@ -1,0 +1,12 @@
+.upcoming-title {
+  color: #078F3F;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.end-upcoming {
+  color: rgba(0,0,0,.54);
+  text-align: center;
+  font-size: 16px;
+}

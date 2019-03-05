@@ -1,7 +1,22 @@
-<div>
-  <app-feed-event *ngFor="let event of feedItems" [data]="event"></app-feed-event>
-  
-  <div style="padding-top: 1000px">
-    fd
+<div class="alert alert-success mt-3" role="alert">
+  <div class="upcoming-title fredoka-font">
+    {{upcomingTitleText}}
   </div>
 </div>
+
+<hr>
+
+<div>
+  <app-feed-event *ngFor="let event of feedItems" [data]="event"></app-feed-event>
+</div>
+
+<div class="end-upcoming fredoka-font">
+  <p>
+    {{endOfUpcomingText}}
+  </p>
+  <p style="font-size: 14px;">
+    Did we miss an event? Contact us at gohappy@gmail.com to let us know!
+  </p>
+  
+</div>
+

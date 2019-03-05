@@ -2,10 +2,12 @@ export class EventSummary {
   title: string;
   iconImage: string;
   titleLink: string;
+  tooltip: string;
 
-  constructor(title: string, iconImage: string) {
+  constructor(title: string, iconImage: string, tooltip: string = "") {
     this.title = title;
     this.iconImage = iconImage;
+    this.tooltip = tooltip;
   }
 
   /**

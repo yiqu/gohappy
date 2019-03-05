@@ -25,6 +25,7 @@
         "openBar": 1,
         "raffle": 1,
         "food": 1,
+        "eventImgUrl": "",
         "status": {
           "display": "On",
           "abbrev": "On",
@@ -60,6 +61,7 @@
         "openBar": 1,
         "raffle": 1,
         "food": 1,
+        "eventImgUrl": "",
         "status": {
           "display": "On",
           "abbrev": "On",
@@ -71,6 +73,150 @@
         "interested": 8
       }
       
+    },
+    {
+      "companyName": {
+        "display": "Praxis 2",
+        "abbrev": "PRAX",
+        "id": "praxis"
+      },
+      "companyImageUrl": "",
+      "startTime": 1552182102000,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "eventImgUrl": "",
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 11
+      }
+    },
+    {
+      "companyName": {
+        "display": "Praxis 4",
+        "abbrev": "PRAX",
+        "id": "praxis"
+      },
+      "companyImageUrl": "",
+      "startTime": 1552786902000,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "eventImgUrl": "",
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 11
+      }
+    },
+    {
+      "companyName": {
+        "display": "Oracle",
+        "abbrev": "Oracle",
+        "id": "oracle"
+      },
+      "companyImageUrl": "",
+      "startTime": 1553650902000,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "eventImgUrl": "",
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 11
+      }
+    },
+    {
+      "companyName": {
+        "display": "Resolute",
+        "abbrev": "PRAX",
+        "id": "praxis"
+      },
+      "companyImageUrl": "",
+      "startTime": 1554082902000,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "eventImgUrl": "",
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 11
+      }
     },
     {
       "companyName": {
@@ -96,6 +242,114 @@
         "openBar": 1,
         "raffle": 1,
         "food": 1,
+        "eventImgUrl": "",
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 11
+      }
+    },{
+      "companyName": {
+        "display": "Praxis 5/1",
+        "abbrev": "PRAX",
+        "id": "praxis"
+      },
+      "companyImageUrl": "",
+      "startTime": 1556674902000,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "eventImgUrl": "",
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 11
+      }
+    },
+    {
+      "companyName": {
+        "display": "Praxis 5/2",
+        "abbrev": "PRAX",
+        "id": "praxis"
+      },
+      "companyImageUrl": "",
+      "startTime": 1552182102000,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "eventImgUrl": "",
+        "status": {
+          "display": "On",
+          "abbrev": "On",
+          "id": "on"
+        }
+      },
+      "eventStats": {
+        "going": 3,
+        "interested": 11
+      }
+    },
+    {
+      "companyName": {
+        "display": "Praxis 5/3",
+        "abbrev": "PRAX",
+        "id": "praxis"
+      },
+      "companyImageUrl": "",
+      "startTime": 1552284222000,
+      "eventDuration": 3,
+      "eventType": {
+        "display": "Meet and Greet",
+        "abbrev": "mag",
+        "id": "mag"
+      },
+      "eventLocation": {
+        "address": "",
+        "name": "NBP 135"
+      },
+      "eventStatus": {
+        "description": "Join us for a Tech Talk happy hour!",
+        "rsvpLink": "link.here",
+        "openBar": 1,
+        "raffle": 1,
+        "food": 1,
+        "eventImgUrl": "",
         "status": {
           "display": "On",
           "abbrev": "On",

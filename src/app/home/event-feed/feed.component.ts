@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, OnChanges, SimpleChanges } from '@angular/core';
-import { IResponse, IFeedItem } from './../../shared/models/IResponse.model';
+import { IResponse, IFeedItem, EventItem } from './../../shared/models/IResponse.model';
 
 @Component({
   selector: 'app-home-feed',
@@ -10,15 +10,22 @@ import { IResponse, IFeedItem } from './../../shared/models/IResponse.model';
 export class HomeFeedComponent implements OnInit, OnChanges {
 
   @Input()
-  data: IResponse;
+  data: EventItem[];
 
-  feedItems: IFeedItem[] = [];
+  feedItems: EventItem[] = [];
+  upcomingTitleText: string = "Upcoming Events";
+  endOfUpcomingText: string = "";
 
   constructor() {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    this.feedItems = changes.data.currentValue.items.slice();
+    this.feedItems = changes.data.currentValue.slice();
+    if (this.feedItems.length > 0) {
+      this.endOfUpcomingText = "That's it for upcoming events!";
+    } else {
+      this.endOfUpcomingText = "Unfortunately, we did not find any upcoming events.";
+    }
   }
 
   ngOnInit() {

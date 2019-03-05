@@ -6,7 +6,7 @@
       <div class="event-subtitles">
         <span *ngFor="let item of subTitleItems" class="event-subtitle">
           <i class="material-icons md-18 light-blue mr-3px">{{item.iconImage}}</i>
-          <div>
+          <div [title]="item.tooltip">
             {{item.title}}
           </div>
         </span>
@@ -14,7 +14,7 @@
         
     </mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="https://i.imgur.com/HDP2ip1.jpg" alt="gdms happy hour">
+  <img mat-card-image [src]="eventImgUrl" [alt]="'happy hour'">
   <mat-card-content>
     <p>
       {{description}}

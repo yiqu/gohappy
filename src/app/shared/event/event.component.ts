@@ -2,6 +2,7 @@ import { Component, OnInit, Input, OnChanges, SimpleChange } from '@angular/core
 import { IFeedItem } from '../models/IResponse.model'
 import { EventSummary } from '../models/event-summary.model';
 import * as moment from 'moment';
+import { EventDate } from '../models/event-date.model';
 
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -22,8 +23,10 @@ export class FeedEventComponent implements OnInit, OnChanges {
   eventDuration: number = 1;
   eventLocation: string = "";
   eventAddress: string = "";
-  eventStartTime: string = "";
+  eventStartTime: EventDate = new EventDate();
   description: string = "";
+  eventImgUrl: string = "";
+  startTimeTooltip: string = "";
 
   subTitleItems: EventSummary[] = [];
 
@@ -40,7 +43,7 @@ export class FeedEventComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    console.log(moment(new Date(1551661582956), 'ddd DD-MMM-YYYY, hh:mm A').format('ddd hh:mm A'))
+    console.log(this.currentData)
   }
 
   createFeed() {
@@ -49,8 +52,10 @@ export class FeedEventComponent implements OnInit, OnChanges {
     this.eventDuration = this.currentData.eventDuration;
     this.eventLocation = this.currentData.eventLocation.name;
     this.eventAddress = this.currentData.eventLocation.address;
-    this.eventStartTime = this.convertToReadableTime(this.currentData.startTime);
+    this.eventStartTime = new EventDate(this.currentData.startTime);
+    this.startTimeTooltip = this.eventStartTime.getTooltip();
     this.description = this.currentData.eventStatus.description;
+    this.eventImgUrl = this.currentData.eventStatus.eventImgUrl;
 
   }
 
@@ -58,15 +63,11 @@ export class FeedEventComponent implements OnInit, OnChanges {
     let listOfItems: EventSummary[] = [];
     const eventType = new EventSummary(this.eventType, "group");
     const eventLocation = new EventSummary(this.eventLocation, "store_mall_directory");
-    const eventStartTime = new EventSummary(this.eventStartTime, "access_time");
+    const eventStartTime = new EventSummary(this.eventStartTime.getDisplay(), 
+      "access_time", this.eventStartTime.getTooltip());
 
     listOfItems.push(eventType, eventLocation, eventStartTime);
     return listOfItems;
-  }
-
-  convertToReadableTime(epoch: number): string {
-    let time = moment(new Date(epoch), 'ddd DD-MMM-YYYY, hh:mm A').format('ddd hh:mm A');
-    return time;
   }
 
  

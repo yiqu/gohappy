@@ -1,3 +1,5 @@
+import { IFeedItem } from './IResponse.model';
+
 export interface IResponse {
   total_count: number;
   items: IFeedItem[];
@@ -12,6 +14,14 @@ export interface IFeedItem {
   eventLocation: IEventLocation;
   eventStatus: IEventStatus;
   eventStats: IEventStats;
+}
+
+export class EventItem implements IFeedItem {
+  constructor(public companyName: ICompanyName, public companyImageUrl: string,
+    public startTime: number, public eventDuration: number, public eventType: IEventType,
+    public eventLocation: IEventLocation, public eventStatus: IEventStatus, 
+    public eventStats: IEventStats) {
+  }
 }
 
 export interface IEventLocation {
@@ -44,6 +54,7 @@ export interface IEventStatus {
   raffle: number;
   food: number;
   status: IHappyItem;
+  eventImgUrl: string;
 }
 
 export interface IEventStats {
