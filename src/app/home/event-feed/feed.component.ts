@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, OnChanges, SimpleChanges } from '@angular/core';
 import { IResponse, IFeedItem, EventItem } from './../../shared/models/IResponse.model';
+import { Utils } from '../../shared/utils';
+import { DataService } from '../../shared/service/data.service';
 
 @Component({
   selector: 'app-home-feed',
@@ -16,7 +18,7 @@ export class HomeFeedComponent implements OnInit, OnChanges {
   upcomingTitleText: string = "Upcoming Events";
   endOfUpcomingText: string = "";
 
-  constructor() {
+  constructor(public ds: DataService) {
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -24,10 +26,11 @@ export class HomeFeedComponent implements OnInit, OnChanges {
     if (this.feedItems.length > 0) {
       this.endOfUpcomingText = "That's it for upcoming events!";
     } else {
-      this.endOfUpcomingText = "Unfortunately, we did not find any upcoming events.";
+      this.endOfUpcomingText = "";
     }
   }
 
   ngOnInit() {
+    Utils.enableJqueryTooltip();
   }
 }

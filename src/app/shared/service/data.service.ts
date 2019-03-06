@@ -16,6 +16,7 @@ export class DataService {
   private startOfToday: moment.Moment = moment().startOf('day');
   public upcomingEvents: EventItem[] = [];
   public pastEvents: EventItem[] = [];
+  public pastEventExist: boolean = false;
 
 
   constructor(public cs: CrudService) {
@@ -27,7 +28,7 @@ export class DataService {
    * place the past events into pastEvents[] list
    */
   getFeedData(): Observable<IFeedItem[]>  {
-    let url: string = "dev-data";
+    let url: string = "dev-data-single";
     return this.cs.read<IResponse>(url).pipe(
       delay(this.testDelay),
       map((val) => {
@@ -38,6 +39,7 @@ export class DataService {
             if (+item.startTime > todayEpoch) {
               return item;
             } else {
+              this.pastEventExist = true;
               this.pastEvents.push(item);
             }
         });

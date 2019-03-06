@@ -1,21 +1,33 @@
-<div class="alert alert-success mt-3" role="alert">
-  <div class="upcoming-title fredoka-font">
-    {{upcomingTitleText}}
+<div *ngIf="feedItems.length > 0; else noEvent">
+  <div class="alert alert-success mt-3" role="alert">
+    <div class="upcoming-title fredoka-font">
+      {{upcomingTitleText}}
+    </div>
   </div>
-</div>
-
-<hr>
-
-<div>
+  <hr>
   <app-feed-event *ngFor="let event of feedItems" [data]="event"></app-feed-event>
 </div>
+
+<ng-template #noEvent>
+  <div class="end-upcoming mt-3 mb-3 fredoka-font blk-color">
+    <img src="assets/images/cry_ji.png" class="no-upcoming-img mb-3" alt="no upcoming">
+    <p>Unfortunately, we did not find any upcoming events.</p>
+    <p *ngIf="this.ds.pastEventExist">Click here to see past events
+      ({{this.ds.pastEvents.length}})
+    </p>
+  </div>
+  
+</ng-template>
 
 <div class="end-upcoming fredoka-font">
   <p>
     {{endOfUpcomingText}}
   </p>
+  <hr>
   <p style="font-size: 14px;">
-    Did we miss an event? Contact us at gohappy@gmail.com to let us know!
+    Did we miss an event? Contact us at 
+    <a href="mailto:gohappy@gmail.com">gohappy@gmail.com</a> 
+    to let us know!
   </p>
   
 </div>

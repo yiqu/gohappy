@@ -6,7 +6,7 @@
       <div class="event-subtitles">
         <span *ngFor="let item of subTitleItems" class="event-subtitle">
           <i class="material-icons md-18 light-blue mr-3px">{{item.iconImage}}</i>
-          <div [title]="item.tooltip">
+          <div [title]="item.tooltip" data-toggle="tooltip" data-placement="bottom">
             {{item.title}}
           </div>
         </span>
